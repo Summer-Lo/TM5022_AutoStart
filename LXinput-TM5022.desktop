@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=LXInput autostart
+Comment=Setup keyboard and mouse using settings done in LXInput
+Exec =lxterminal --title="Raspberry Pi and Arduino Connection" --working-directory="/home/pi" -e "./TM5022.sh; read -n 1 -s"
+
