@@ -20,9 +20,9 @@ urlT3="/home/pi/Desktop/TM5022-ULD/Task3"
 fileU="${urlU##*/}"
 fileS="${urlS##*/}"
 # files: sensor.cpp, sensor.h, stopper.cpp, stopper.h
-[ -d "$file" ] && echo "Found" && sudo rm -r "$file" && echo "Folder ($file) deleted!"
+[ -d "$fileS" ] && echo "Found" && sudo rm -r "$fileS" && echo "Folder ($fileS) deleted!"
 
-[ ! -d "$file" ] && echo "Not Found" && git clone https://github.com/Summer-Lo/TM5022-Student.git && sudo chmod -R 777 "$fileS"
+[ ! -d "$fileS" ] && echo "Not Found" && git clone https://github.com/Summer-Lo/TM5022-Student.git && sudo chmod -R 777 "$fileS"
 
 cd "$urlSL" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT1" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT2_1" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT2_2" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT3"
 echo "Complete reborn"
