@@ -1,7 +1,6 @@
 #!/bin/sh
-# TM5022.sh
+# TM5022_reborn.sh
 
-sleep 10 
 cd Desktop
 # git clone https://github.com/Summer-Lo/TM5022-Student.git
 urlU="/home/pi/Desktop/TM5022-ULD"
@@ -20,8 +19,3 @@ fileS="${urlS##*/}"
 
 cd "$urlSL" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT1" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT2_1" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT2_2" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT3"
 echo "Complete reborn"
-
-cd 
-cd /home/pi/TM5022_RPi/RaspberryPi
-sleep 10
-python GPIO2MQTT_PLC_v1.py 2
