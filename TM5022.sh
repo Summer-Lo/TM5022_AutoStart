@@ -25,6 +25,8 @@ fileS="${urlS##*/}"
 [ ! -d "$fileS" ] && echo "Not Found" && git clone https://github.com/Summer-Lo/TM5022-Student.git && sudo chmod -R 777 "$fileS"
 
 cd "$urlSL" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT1" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT2_1" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT2_2" && cp sensor.cpp sensor.h stopper.cpp stopper.h "$urlT3"
+cd
+[ -d "$fileS" ] && echo "Found TM5022-Student" && sudo rm -r "$fileS" && echo "Folder ($fileS) deleted!"
 echo "Complete reborn"
 
 cd 
