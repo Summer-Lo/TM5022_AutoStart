@@ -31,6 +31,6 @@ cd Desktop
 echo "Complete reborn"
 
 cd 
-cd /home/pi/TM5022_RPi/RaspberryPi
+cd /home/pi/version2
 sleep 10
-python GPIO2MQTT_PLC_v1.py 2
+python GPIO2MQTT_PLC_v2.py 2
